@@ -4,7 +4,7 @@
 SET output=%~dpn1-Mono.wav
 
 if "%~1"=="" (
-    echo Usage: .\FromStereoToMono.bat [Channel_Number] [input_file.wav]
+    echo Usage: .\FromStereoToMono.bat [input_file.wav]
     goto continue
 )
 
