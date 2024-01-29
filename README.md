@@ -17,6 +17,7 @@ Here are some audio utilities that I could be using.
 
 ## How to use the scripts :keyboard:
 
-Run:
-```FromStereoToMono.bat [audio file paths]```
-After running this script with the files that need you want to change to mono, it is going to ask you which method to use and depending on the method it will give you more options.
+- Run: ```FromStereoToMono.bat [audio file paths]```
+- After running this script with the files that you intent to change to mono, it is going to ask you which method to use.
+  - First method one it will add both channels together.
+  - Second method it will ask you to choose one side of the stereo channel to keep and it will discard the other channel. 
