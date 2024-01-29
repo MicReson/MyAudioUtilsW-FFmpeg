@@ -13,3 +13,9 @@ Here are some audio utilities that I could be using.
   - Using winget `winget install --name ffmpeg` or `winget install --id Gyan.FFmpeg`.
 - Clone or download the repo and use the batch scripts.
 - If no arguments are given, it will print a quick instruction on how to use it.
+
+## How to use the scripts :keyboard:
+
+Run:
+```FromStereoToMono.bat [audio file paths]```
+After running this script with the files that need you want to change to mono, it is going to ask you which method to use and depending on the method it will give you more options.
