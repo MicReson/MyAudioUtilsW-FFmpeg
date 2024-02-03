@@ -1,7 +1,8 @@
 @echo off
+
 SET /P CodecType= "Which codec? 1 for MP3, 2 for WAV and 3 for AAC: "
 
-if %CodecType% NEQ 1 if %CodecType% NEQ 2 if %CodecType% NEQ 3(
+if %CodecType% NEQ 1 if %CodecType% NEQ 2 if %CodecType% NEQ 3 (
     echo Please provide a codec option
     exit /b
 )
@@ -60,14 +61,14 @@ exit /b
 
 :AAC_Codec
 :LoopAAC
-SET output=%~dpn1-AUDIO.aac 
+SET output=%~dpn1-AUDIO.aac
 
 if "%~1"=="" (
     echo Usage: .\GetAudioFromVideo.bat [input_file.wav]
     goto continueAAC
 )
 
-ffmpeg -i %1 -vn -acodec aac "%output%"
+ffmpeg -i %1 -vn -c:a aac -b:a 192k "%output%"
 
 echo Conversion complete: %output%
 
