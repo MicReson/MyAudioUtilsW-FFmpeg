@@ -1,0 +1,5 @@
+# Ignore anything that it is a test
+**/[Tt]est*
+
+# Ignore MacOS files
+**DS_Store

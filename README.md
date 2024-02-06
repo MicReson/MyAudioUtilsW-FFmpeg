@@ -1,5 +1,8 @@
 # Some audio utilities wrappers using ffmpeg
 
+## IMPORTANT AND WIP :warning:
+- Any bash script presented here is not ready yet and/or not working.
+
 ## Audio Utilities :headphones:
 
 Here are some audio utilities that I could be using.
