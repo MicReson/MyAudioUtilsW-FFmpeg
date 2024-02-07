@@ -61,7 +61,7 @@ exit /b
 
 :AAC_Codec
 :LoopAAC
-SET output=%~dpn1-AUDIO.aac
+SET output=%~dpn1-AUDIO.m4a
 
 if "%~1"=="" (
     echo Usage: .\GetAudioFromVideo.bat [input_file.wav]
