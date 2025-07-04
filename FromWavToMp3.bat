@@ -7,6 +7,7 @@ SET quality=%~2
 
 if "%~1"=="" (
     echo Usage: FromWavToMp3.bat [input_file.wav] [quality]
+    pause
     exit /b
 )
 
@@ -24,6 +25,7 @@ SET valid_qualities=0123456789
 
 if NOT "%valid_qualities:"%quality%"=%"=="%valid_qualities%" (
     echo The quality of conversion should be a single digit between 0 and 9.
+    pause
     exit /b
 )
 
